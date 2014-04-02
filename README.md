@@ -7,6 +7,9 @@ Ralph's List
 
 **MVC Description & its purpose within the app:**
 
+Views
+-------
+
 1. Home page
   * Similar to Rotten Potatoes, the home page will contain a list of all books that are currently for sale by users. This page will have a search bar that allows for searching for a specific book. The search can be done via ISBN, course code, department, title, or author.
 
