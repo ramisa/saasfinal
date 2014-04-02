@@ -33,13 +33,11 @@ MVC Description & its purpose within the app:
   
 **Controllers**
 
-1. Controller 1
-2. Controller 2
-3. Controller 3
+1. Books
+2. Customers
+
 
 **Models**
 
-1. Model 1
-2. Model 2
-3. Model 3
-
+1. Books
+2. Customers
