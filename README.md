@@ -7,23 +7,23 @@ Ralph's List
 
 **MVC Description & its purpose within the app:** 
 1. Home page
-  *Similar to Rotten Potatoes, the home page will contain a list of all books that are currently for sale by users. This page will have a search bar that allows for searching for a specific book. The search can be done via ISBN, course code, department, title, or author.
+  * Similar to Rotten Potatoes, the home page will contain a list of all books that are currently for sale by users. This page will have a search bar that allows for searching for a specific book. The search can be done via ISBN, course code, department, title, or author.
 
 2.	Search Results
-  *After a user searches for a specific book, they can sort resulting items by price or condition. If a user would like more information on this book or want to purchase it, they will click on that posting.
+  * After a user searches for a specific book, they can sort resulting items by price or condition. If a user would like more information on this book or want to purchase it, they will click on that posting.
 
 3.	Book details
-  *This view will list all details about the book that were created when the book was published as “for sale”.
+  * This view will list all details about the book that were created when the book was published as “for sale”.
 
 4.	Create a new user account
-  *If a user would like to purchase or sell a book, they will have to create an account. To avoid ambiguous features and keep things simple and easy, this account will only require your first name, email address and password.
+  * If a user would like to purchase or sell a book, they will have to create an account. To avoid ambiguous features and keep things simple and easy, this account will only require your first name, email address and password.
 
 5.	Create a new listing for sale
-  *When creating a new listing, the seller will have to specify a few things in order to make it easy for other users to find what they’re looking for. This will be ISBN, the course code that this book was used for including department code (eg: CSCI, MCEN), the book’s title and author.
+  * When creating a new listing, the seller will have to specify a few things in order to make it easy for other users to find what they’re looking for. This will be ISBN, the course code that this book was used for including department code (eg: CSCI, MCEN), the book’s title and author.
 
 6.	View your account
-  *Users will be able to see their active postings as well as concluded postings.
+  * Users will be able to see their active postings as well as concluded postings.
 
 7.	View Another User’s Account
-  *Within this page, you will be able to see other users active and concluded postings.
+  * Within this page, you will be able to see other users active and concluded postings.
 
