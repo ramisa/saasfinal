@@ -10,7 +10,6 @@ MVC Description & its purpose within the app:
 
 **Views**
 
-
 1. Home page
   * Similar to Rotten Potatoes, the home page will contain a list of all books that are currently for sale by users. This page will have a search bar that allows for searching for a specific book. The search can be done via ISBN, course code, department, title, or author.
 
@@ -31,4 +30,16 @@ MVC Description & its purpose within the app:
 
 7.	View Another User’s Account
   * Within this page, you will be able to see other users active and concluded postings.
+  
+**Controllers**
+
+1. Controller 1
+2. Controller 2
+3. Controller 3
+
+**Models**
+
+1. Model 1
+2. Model 2
+3. Model 3
 
