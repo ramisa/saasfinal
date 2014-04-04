@@ -1,0 +1,29 @@
+Feature: display movies from search
+ 
+	As a user
+	In order to find the book I am searching for
+	I would like to be able to search for teh book by entering in an ISBN, course code, title or 		author into a search bar. 
+
+Background: books are in the database
+
+  Given the following books exist:
+  | title                   | Author | condition    |
+  | Saasbook                |        | very good    |
+
+  
+Scenario: search for Saasbook
+	Given I am on the RalphsList home page
+	Then I should see "Search for a book"
+	When I fill in "Search Terms" with "Saasbook"
+	And I press "Search"
+	Then I should be on the RalphsList home page
+	And I should see "Saasbook"
+  
+Scenario: Try to find nonexistent book (sad path)
+	Given I am on the RalphsList home page
+	Then I should see "Search for a book"
+	When I fill in "Search Terms" with "Book That Does Not Exist"
+	And I press "Search"
+	Then I should be on the RalphsList home page
+	And I should see " 'Book That Does Not Exist' was not found."
+  
