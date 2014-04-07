@@ -6,4 +6,4 @@ Feature: home page functionality
 
 Scenario: home page
   When I go to ralphs_list home page
-  Then I should see "RalphsList#home"
+  Then I should see "Welcome to Ralphs List!"

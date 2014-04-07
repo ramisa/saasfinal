@@ -22,6 +22,12 @@ module NavigationHelpers
     when /^ralphs_list signup page/
       '/ralphs_list/signup'
 
+    when /^ralphs_list postlisting page/
+      '/ralphs_list/postlisting'
+
+    when /^ralphs_list myaccount page/
+      '/ralphs_list/myaccount'
+
 
     when /^the movies page$/ then '/movies'
 
