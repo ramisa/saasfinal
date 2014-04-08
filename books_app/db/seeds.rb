@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+books = [{:title => 'PROGRAMMING IN SCALA', :author => 'ODERSKY', :condition => 'GOOD', :price => '54.95'},
+    	  {:title => 'Algorithms', :author => 'Dasgupta', :condition => 'Like New', :price => '60.00'},
+    	 
+books.each do |movie|
+  books.create!(movie)
+end
