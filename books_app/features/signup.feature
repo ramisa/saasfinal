@@ -6,4 +6,4 @@ Feature: signup page functionality
 
 Scenario: signup page
   When I go to ralphs_list signup page
-  Then I should see "RalphsList Sign Up!"
+  Then I should see "Signup for Ralphs List!"

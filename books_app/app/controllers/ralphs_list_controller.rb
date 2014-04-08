@@ -6,4 +6,10 @@ class RalphsListController < ApplicationController
   def signup
   end
 
+  def postlisting
+  end
+
+  def myaccount
+  end
+
 end
