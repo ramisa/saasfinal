@@ -19,7 +19,7 @@ class RalphsListController < ApplicationController
   end
 
   def create
-    @book = Book.create!(book_params)
+    @book = Book.create!(ad_params)
 	
 
     flash[:notice] = "#{@book.title} was successfully created."
@@ -34,7 +34,7 @@ class RalphsListController < ApplicationController
 
 private
 
-  	def book_params
+  	def ad_params
   	params.require(:book).permit(:title, :author, :condition, :price)
   end
 

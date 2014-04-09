@@ -1,7 +1,7 @@
 Feature: User can manually add movie
 	As a user
 	In order to sell a book through my account
-	I woul dlike to be able to post a listing of the book I am trying to sell
+	I would like to be able to post a listing of the book I am trying to sell
 
 Scenario: Add a book to sell
 	Given I am on the RalphsList home page
