@@ -5,7 +5,25 @@
     This is the post a listing page for Ralphs List
   </h2>
 
-  <%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
 </div>
 
-<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+<h3> Create New Movie </h3>
+
+<%= form_tag '/ralphs_list/home' do %>
+
+  <%= label :book, :title, 'Title' %>
+  <%= text_field :book, :title %>
+
+  <%= label :book, :author, 'Author' %>
+  <%= text_field :book, :author %>
+
+  <%= label :book, :condition, 'Condition' %>
+  <%= select :book, :condition, ['Poor', 'Okay', 'Good', 'Like New'] %>
+
+  <%= label :book, :price, 'Price' %>
+  <%= text_field :book, :price %>
+
+  <%= submit_tag 'Save Changes' %>
+
+<% end %>
+
