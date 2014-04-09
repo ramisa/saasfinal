@@ -30,7 +30,7 @@ class BooksController < ApplicationController
 	if @book.save
 
     flash[:notice] = "#{@book.title} was successfully created."
-    redirect_to books_path
+    redirect_to '/ralphs_lis/home'
 else
 
 	render: new
