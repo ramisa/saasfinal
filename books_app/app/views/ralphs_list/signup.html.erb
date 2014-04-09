@@ -1,11 +1,34 @@
 <div class="center hero-unit">
-  <h1>Signup for Ralphs List!</h1>
+  <h1>Sign Up for Ralphs List!</h1>
 
   <h2>
-    This is the signup page for Ralphs List
+    This is the Sign Up page for Ralphs List
   </h2>
 
 
 </div>
 
-<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+<h3> Sign Up </h3>
+
+<%= form_tag '/ralphs_list/signup' do %>
+
+  <%= label :user, :name, 'First Name' %>
+  <%= text_field :user, :name %>
+
+  <%= label :user, :gender, 'Gender' %>
+  <%= select :user, :gender, ['Female', 'Male', 'IDK'] %>
+
+  <%= label :user, :email, 'Email Address' %>
+  <%= text_field :user, :email %>
+
+  <%= label :user, :password, 'Password' %>
+  <%= text_field :user, :password %>
+
+  <%= label :user, :password2, 'Confirm Password' %>
+  <%= text_field :user, :password2 %>
+
+  <%= submit_tag 'Create Account' %>
+
+<% end %>
+
+<%= link_to "Cancel", '/ralphs_list/home', class: "btn btn-large btn-primary" %>

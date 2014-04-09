@@ -14,7 +14,7 @@ module NavigationHelpers
     case page_name
 
     when /^the home\s?page$/
-      '/ralphs_list/home'
+      '/ralphs_list/home'   
 
     when /^ralphs_list home page/
       '/ralphs_list/home'
@@ -27,7 +27,6 @@ module NavigationHelpers
 
     when /^ralphs_list myaccount page/
       '/ralphs_list/myaccount'
-
 
     when /^the movies page$/ then '/movies'
 
