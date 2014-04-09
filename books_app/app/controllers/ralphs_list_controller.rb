@@ -8,7 +8,7 @@ class RalphsListController < ApplicationController
   end
 
   def postlisting
-  	
+
   end
 
   def myaccount
@@ -23,7 +23,7 @@ class RalphsListController < ApplicationController
 	
 
     flash[:notice] = "#{@book.title} was successfully created."
-    redirect_to '/ralphs_list/home'
+    #redirect_to '/ralphs_list/home'
   end
 
   def update
