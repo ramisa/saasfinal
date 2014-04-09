@@ -1,6 +1,7 @@
 class RalphsListController < ApplicationController
 
   def home
+  	@books = Book.all
   end
 
   def signup
