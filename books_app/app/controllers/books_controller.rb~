@@ -1,7 +1,6 @@
 class BooksController < ApplicationController
 
 
-
   def index
     sort = params[:sort] || session[:sort]
     case sort
@@ -26,15 +25,21 @@ class BooksController < ApplicationController
   end
 
   def create
-    @books = Book.create!(params[:book])
+	
+    @books = book.new(params[:book])
+	if @book.save
+
     flash[:notice] = "#{@book.title} was successfully created."
     redirect_to books_path
+else
+
+	render: new
   end
 
   def update
     @book.update_attributes!(params[:book])
     flash[:notice] = "#{@book.title} was successfully updated."
-    redirect_to book_path(@book)
+    redirect_to books_path(@book)
   end
 
   def destroy
