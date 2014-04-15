@@ -20,6 +20,10 @@ def edit
     @user= current_user
 end
 
+def show
+
+  @user = User.show
+
 def update 
     @user.attributes = params[:user}
     if @user.save
