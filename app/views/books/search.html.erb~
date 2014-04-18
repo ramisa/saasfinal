@@ -1,0 +1,8 @@
+<% form_tag :controller => 'books', :action => 'search' do %>
+  <span class="textFields">
+    <%= text_field_tag :search, params[:search], :id => 'search_field' %>
+  </span>
+  <span class="submit">
+    <%= submit_tag "Search Books", :name => nil %>
+  </span>
+<% end %>

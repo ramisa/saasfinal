@@ -1,0 +1,27 @@
+<h1>All Users List</h1>
+
+<% provide(:title, 'All Users List') %>
+
+<table>
+  <tr>
+    <th>Name &nbsp; &nbsp; &nbsp;</th>
+    <th>Email Address &nbsp; &nbsp; &nbsp;</th>
+    <th>Created At &nbsp; &nbsp; &nbsp;</th>
+    <th>Updated At &nbsp; &nbsp; &nbsp;</th>
+    <th>Gender &nbsp; &nbsp; &nbsp;</th>
+    <th>Age &nbsp; &nbsp; &nbsp;</th>
+  </tr>
+
+  <% @users.each do |user| %>
+  <tr>
+    <td><%= user.name %></td>
+    <td><%= user.email %></td>
+    <td><%= user.created_at %></td>
+    <td><%= user.updated_at %></td>
+    <td><%= user.gender %></td>
+    <td><%= user.age %></td>
+  </tr>
+
+<% end %>
+
+

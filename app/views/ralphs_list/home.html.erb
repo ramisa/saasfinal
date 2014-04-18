@@ -1,0 +1,45 @@
+<div class="center hero-unit">
+  <h1>Welcome to Ralphs List</h1>
+
+  <h2>
+    This is the home page for Ralphs List
+  </h2>
+
+  <%= link_to "Sign up now!", '/signup', class: "btn btn-large btn-primary" %>
+
+  <%= link_to "Post a listing!", '/postlisting', class: "btn btn-large btn-primary" %>
+</div>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_tag '/search#new' do %>
+
+    <%= label :search, :item, 'Search For: UNIMPLEMENTED!' %>
+    <%= text_field :search, :item %>
+
+    <%= submit_tag 'Search' %>
+
+    <% end %>
+  </div>
+</div>
+
+<table>
+  <tr>
+    <th>Title &nbsp; &nbsp; &nbsp;</th>
+    <th>Author &nbsp; &nbsp; &nbsp;</th>
+    <th>Condition &nbsp; &nbsp; &nbsp;</th>
+    <th>Price &nbsp; &nbsp; &nbsp;</th>
+  </tr>
+
+  <% @books.each do |book| %>
+  <tr>
+    <td><%= book.title %></td>
+    <td><%= book.author %></td>
+    <td><%= book.condition %></td>
+    <td><%= book.price %></td>
+  </tr>
+
+  <% end %>
+
+</table>
+

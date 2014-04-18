@@ -1,0 +1,30 @@
+<div class="center hero-unit">
+  <h1>Post a listing to Ralphs List!</h1>
+
+  <h2>
+    This is the Post Listing page for Ralphs List
+  </h2>
+
+</div>
+
+<h3> Post a Listing </h3>
+
+<%= form_tag '/books#new' do %>
+
+  <%= label :book, :title, 'Title' %>
+  <%= text_field :book, :title %>
+
+  <%= label :book, :author, 'Author' %>
+  <%= text_field :book, :author %>
+
+  <%= label :book, :condition, 'Condition' %>
+  <%= select :book, :condition, ['Poor', 'Okay', 'Good', 'Like New'] %>
+
+  <%= label :book, :price, 'Price' %>
+  <%= text_field :book, :price %>
+
+  <%= submit_tag 'Add Listing' %>
+
+<% end %>
+
+<%= link_to "Cancel", '/', class: "btn btn-large btn-primary" %>

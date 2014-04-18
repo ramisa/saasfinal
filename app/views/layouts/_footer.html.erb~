@@ -1,0 +1,11 @@
+<footer class="footer">
+  <small>
+    by Carissa Chen, Tyler Vannurden and Ramisa Faruque
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to "About", about_path %></li>
+      <li><%= link_to "Contact", '#' %></li>
+    </ul>
+  </nav>
+</footer>

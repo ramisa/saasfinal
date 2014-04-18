@@ -1,0 +1,22 @@
+<h1>Index Page</h1>
+
+<table>
+  <tr>
+    <th>Title &nbsp; &nbsp; &nbsp;</th>
+    <th>Author</th>
+    <th>Condition</th>
+    <th>Price</th>
+  </tr>
+
+   <% @books.each do |book| %>
+
+  <tr>
+    <td><%= book.title %></td>
+    <td><%= book.author %></td>
+    <td><%= book.condition %></td>
+    <td><%= book.price %></td>
+  </tr>
+
+  <% end %>
+
+</table>

@@ -1,0 +1,36 @@
+<<<<<<< HEAD
+<% provide(:title, 'Sign up') %>
+<h1>Sign up</h1>
+<p>Find me in app/views/users/new.html.erb</p>
+=======
+<div class="center hero-unit">
+  <h1>Sign Up for Ralphs List!</h1>
+
+  <h2>
+    This is the Sign Up page for Ralphs List
+  </h2>
+
+</div>
+
+<h3> Sign Up </h3>
+
+<%= form_tag '/users#new' do %>
+
+  <%= label :user, :name, 'First Name' %>
+  <%= text_field :user, :name %>
+
+  <%= label :user, :email, 'Email Address' %>
+  <%= text_field :user, :email %>
+
+  <%= label :user, :age, 'Age' %>
+  <%= text_field :user, :age %>
+
+  <%= label :user, :gender, 'Gender' %>
+  <%= select :user, :gender, ['Female', 'Male', 'IDK'] %>
+
+  <%= submit_tag 'Create Account' %>
+
+<% end %>
+
+<%= link_to "Cancel", '/ralphs_list/home', class: "btn btn-large btn-primary" %>
+>>>>>>> 14befefc5822ef8e1b9f7d0dbc63c021fee1f14f

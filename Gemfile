@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
+ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+gem 'rails', '4.0.4'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'sprockets', '2.11.0'
+gem 'bcrypt-ruby', '3.1.2'
 
-gem 'blorgh'
-gem 'devise'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
@@ -40,10 +40,8 @@ group :test do
   gem 'cucumber'
   gem 'cucumber-rails', :require => false
   gem 'rspec-expectations'
-  gem 'rspec-rails'
+  gem 'factory_girl_rails', '4.2.1'
 end
-
-
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
@@ -60,13 +58,13 @@ end
 # add to end of Gemfile. This is the gemfile addition that the
 # book recommends for Cucumber BDD testing.
 group :test, :development do
-  gem 'cucumber-rails-training-wheels' # some pre-fabbed step definitions  
+  gem 'rspec-rails', '2.13.1'
+  gem 'cucumber-rails-training-wheels' # some pre-fabbed step definitions
   gem 'database_cleaner' # to clear Cucumber's test database between runs
-  gem 'capybara'         # lets Cucumber pretend to be a web browser
-  gem 'launchy'          # a useful debugging aid for user stories
+  gem 'capybara' # lets Cucumber pretend to be a web browser
+  gem 'launchy' # a useful debugging aid for user stories
 end
 
 group :development do
-	#gem 'cucumber-rails'
-
+#gem 'cucumber-rails'
 end
